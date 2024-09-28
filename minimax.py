@@ -42,7 +42,8 @@ def get_human_move(node):
 
 
 def game():
-    root = Board('---------', 1)
+    turn = int(input("Type 0 if you want to play first, 1 otherwise: "))
+    root = Board('---------', turn)
     while not root.is_terminal():
         print(root)
         if root.turn == 0:
